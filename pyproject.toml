@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "datawarehouse"
+version = "0.1.0"
+description = ""
+authors = ["Deborah Foroni <deborah.foroni@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+briefer = "^0.0.14"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
