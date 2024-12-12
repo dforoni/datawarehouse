@@ -1,5 +1,6 @@
-from pydantic import BaseModel,validator, PositiveFloat, PositiveInt
+from pydantic import BaseModel,validator, PositiveFloat, PositiveInt, Field
 from datetime import datetime
+from decimal import Decimal
 from enum import Enum
 from typing import Optional
 
@@ -17,5 +18,5 @@ class Metas(BaseModel):
     login: str
     dt_inicio: datetime
     dt_fim: datetime
-    meta: PositiveInt
+    meta: Decimal = Field(..., ge=0, description="Meta deve ser maior ou igual a 0") 
     piso_remuneracao: PositiveFloat
