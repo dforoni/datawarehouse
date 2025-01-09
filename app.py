@@ -1,5 +1,7 @@
 import streamlit as st
-from pages import metas, colaborador, financeiro
+import colaborador
+import financeiro
+import metas
 
 # Criar menu de navegação
 menu = st.sidebar.radio("**Menu de Cadastro**", ["Início", "Metas", "Colaborador", "Financeiro"])
@@ -19,7 +21,7 @@ elif menu == "Financeiro":
     financeiro.main()  
 
 # Criar menu de navegação
-menu = st.sidebar.radio("**Menu de Gráficos**", ["Laudos Realizados", "Análise de Voluntários"])
+menu = st.sidebar.radio("**Menu de Gráficos**", ["Laudos Realizados", "Análise de Voluntários", "Análise de Outros Vínculos"])
 
 # Criar menu de navegação
 menu = st.sidebar.radio("**Menu de Folha de Pagamento**", ["Folha de Pagamento"])
