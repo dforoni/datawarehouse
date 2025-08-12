@@ -3,6 +3,8 @@ import colaborador
 import financeiro
 import metas
 
+st.set_page_config(page_title="Produtividade Médica POC", page_icon="📊")
+
 # Criar menu de navegação
 menu = st.sidebar.radio("**Menu de Cadastro**", ["Início", "Metas", "Colaborador", "Financeiro"])
 
